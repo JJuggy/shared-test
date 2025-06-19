@@ -6,23 +6,23 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "build"
+    "dist"
   ],
   "exports": {
     ".": {
-      "types": "./build/types/index.d.ts",
-      "import": "./build/index.js",
-      "require": "./build/index.js"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
     },
     "./components": {
-      "types": "./build/types/components/*",
-      "import": "./build/components/*",
-      "require": "./build/components/*"
+      "types": "./dist/types/components/*",
+      "import": "./dist/components/*",
+      "require": "./dist/components/*"
     }
   },
   "scripts": {
     "dev": "vite",
-"build": "tsc && vite build",
+    "build": "tsc && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
